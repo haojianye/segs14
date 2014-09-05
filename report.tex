@@ -1,0 +1,98 @@
+\documentclass{sig-alternate}
+
+%\documentclass{acm_proc_article-sp}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{graphicx}
+\usepackage{url}
+%\usepackage{amsmath}
+%\usepackage{amsthm}
+\usepackage[small,it]{caption}
+\DeclareCaptionType{copyrightbox}
+\usepackage{subcaption}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+\newtheorem{definition}{Definition}
+\begin{document}
+%
+% --- Author Metadata here ---
+%\conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
+% --- End of Author Metadata ---
+
+\title{Adaptive Defending Strategy for Smart Grid Attacks}
+
+% There's nothing stopping you putting the seventh, eighth, etc.
+% author on the opening page (as the 'third row') but we ask,
+% for aesthetic reasons that you place these 'additional authors'
+% in the \additional authors block, viz.
+
+% Just remember to make sure that the TOTAL number of authors
+% is the number that will appear on the first page PLUS the
+% number that will appear in the \additionalauthors section.
+\numberofauthors{2} 
+
+\author{
+% You can go ahead and credit any number of authors here,
+% e.g. one 'row of three' or two rows (consisting of one row of three
+% and a second row of one, two or three).
+%
+% The command \alignauthor (no curly braces needed) should
+% precede each author name, affiliation/snail-mail address and
+% e-mail address. Additionally, tag each line of
+% affiliation/address with \affaddr, and tag the
+% e-mail address with \email.
+%
+% 1st. author
+\alignauthor
+Jianye Hao, Eunsuk Kang, \\Daniel Jackson\\
+       \affaddr{Massachusetts Institute of Technology}\\
+      \email{\{jianye, eskang, dnj\}@mit.edu}
+% 2nd. author
+% \alignauthor
+% Eunsuk Kang\\
+%        \affaddr{Massachusetts Institute of Technology}\\
+%        \email{eskang@csail.mit.edu}
+% % 3rd. author
+% \alignauthor Daniel Jackson\\
+%        \affaddr{Massachusetts Institute of Technology}\\
+%        \email{dnj@mit.edu}
+\and  % use '\and' if you need 'another row' of author names
+% 4th. author
+\alignauthor Jun Sun\\
+       \affaddr{Singapore University of Technology and Design}\\
+         \email{sunjun@sutd.edu.sg}
+}
+
+\maketitle
+\begin{abstract}
+\input{abstract}
+\end{abstract}
+
+% A category with the (minimum) three required fields
+%\category{H.4}{Information Systems Applications}{Miscellaneous}
+%A category including the fourth, optional field follows...
+%\category{D.2.8}{Software Engineering}{Metrics}[complexity measures, performance measures]
+
+%\terms{Theory}
+
+%\keywords{ACM proceedings, \LaTeX, text tagging}
+\input{introduction}
+
+
+\input{relatedwork}
+
+\input{problem}
+
+%describe the game-theoretic modeling of the defender-attacker model (refer to \cite{ma2013markov}). The difference is that we assume that each time the attacker launchs an attack on the system and the system's performance is degraded due to the attack, the system will be restored to its initial state before the next attack occurs (any damaged transimission link will be repaired). In this way, the origianl markov game model can be reduced to the repeated game model- markov game with only one state.
+
+\input{protectionstrategy}
+
+\input{simulation}
+
+\input{conclusion}
+
+\bibliographystyle{plain}
+\bibliography{ref}
+\end{document}

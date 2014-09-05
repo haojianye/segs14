@@ -1,0 +1,10 @@
+.DS_Store
+main.pdf
+main.log
+*aux
+*bbl
+*blg
+*tmp
+*dvi
+*aux
+*log

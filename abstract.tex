@@ -1,0 +1,24 @@
+One active area of research in smart grid security focuses on applying
+game-theoretic frameworks to analyze interactions between a system and
+an attacker and formulate effective defense strategies. In previous work,
+a Nash equilibrium (NE) solution is chosen as the optimal defense
+strategy \cite{law2012security,ma2013markov}, which implies that the
+attacker has complete knowledge of the system and would also employ
+the corresponding NE strategy. In practice, however, the attacker may
+have limited knowledge and resources, and thus employ an attack which
+is less than optimal, allowing the defender to devise more efficient
+strategies.
+
+We propose a novel approach called an \underline{a}daptive
+\underline{M}arkov \underline{s}trategy (AMS) for defending a system
+against attackers with unknown, dynamic behaviors. The algorithm for
+computing an AMS is theoretically guaranteed to converge to a best
+response strategy against any stationary attacker, and also converge
+to a Nash equilibrium if the attacker is sufficiently intelligent to
+employ the AMS to launch the attack. To evaluate the effectiveness of
+an AMS in smart grid systems, we study a class of data integrity
+attacks that involve injecting false voltage information into a
+substation, with the goal of causing load shedding (and potentially a
+blackout). Our preliminary results show that the amount of load
+shedding costs can be significantly reduced by employing an AMS over
+a NE strategy.
